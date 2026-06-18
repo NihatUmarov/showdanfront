@@ -1,0 +1,77 @@
+name: showdan
+description: "A showdan Flutter project."
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.9
+  flutter_native_splash: ^2.4.7
+  flutter_svg: ^2.2.4
+  flutter_screenutil: ^5.9.3
+
+  maplibre_gl: ^0.26.0
+  latlong2: ^0.9.0
+
+  extended_image: ^10.0.1
+  dio: ^5.4.0
+  flutter_secure_storage: ^9.0.0
+  google_sign_in: ^6.2.1
+  get_it: ^8.0.0
+  signalr_netcore: ^1.4.4
+  jwt_decoder: ^2.0.1
+
+  record: ^6.2.0
+  file_picker: ^11.0.2
+  path_provider: ^2.1.5
+  audioplayers: ^6.6.0
+  shared_preferences: ^2.5.5
+  provider: ^6.1.5+1
+  geolocator: ^14.0.2
+
+
+  image_picker: ^1.2.1
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  url_launcher: ^6.3.2
+  youtube_player_iframe: ^6.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon_showdan.png"
+  adaptive_icon_background: "#020113"
+  adaptive_icon_foreground: "assets/icon_showdan.png"
+
+flutter:
+  generate: false
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/Profile/
+    - assets/AppBottom/
+    - assets/icons/
+
+flutter_native_splash:
+  color: "#020113"
+  image: assets/splash_android.png
+  android: true
+  ios: true
+
+  android_12:
+    image: assets/splash_android.png
+    color: "#020113"

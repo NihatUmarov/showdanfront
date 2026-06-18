@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "714605979381",
+    "project_id": "showdan-b78ca",
+    "storage_bucket": "showdan-b78ca.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714605979381:android:a1f63ab94ab153706887bc",
+        "android_client_info": {
+          "package_name": "com.showdan.showdan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT369_Zpcwhi7Jq3M2hjxXRJFLlTtjb6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
