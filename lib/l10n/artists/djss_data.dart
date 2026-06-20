@@ -34,7 +34,7 @@ enum DjType {
       MusicGenre.values.cast<MusicGenre?>().firstWhere((e) => e?.id == id, orElse: () => null);
 
   List<MusicGenre> get subGenres =>
-      MusicGenre.values.where((e) => e.parentId == id).toList();
+      MusicGenre.values.where((e) => вe.parentId == id).toList();
 
   bool get hasChildren => subGenres.isNotEmpty;
 }

@@ -13,7 +13,7 @@ class AddressResponseDto {
   final int id;
   final String city;
   final double lon;
-
+к
   AddressResponseDto({
     required this.id,
     required this.city,

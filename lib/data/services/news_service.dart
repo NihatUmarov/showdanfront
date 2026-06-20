@@ -52,7 +52,7 @@ class NewsService {
           );
         }
       }
-    );
+    );в
     return true;
   }
 

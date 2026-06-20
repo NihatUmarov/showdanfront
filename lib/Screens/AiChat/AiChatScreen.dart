@@ -81,4 +81,4 @@ class _TypewriterTextState extends State<_TypewriterText> {
       ),
     );
   }
-}
+}в

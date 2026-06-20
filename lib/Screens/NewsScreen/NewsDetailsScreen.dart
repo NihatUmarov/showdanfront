@@ -13,7 +13,7 @@ class LikesCacheService {
       return {};
     }
   }
-
+f
   bool isLiked(int newsId) {
     final likes = _getRawLikes();
     return likes.containsKey(newsId.toString());

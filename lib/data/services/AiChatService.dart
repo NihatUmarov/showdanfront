@@ -6,4 +6,4 @@ class AiChatService {
 
     return AiChatResponse.fromJson(response.data);
   }
-}
+}в

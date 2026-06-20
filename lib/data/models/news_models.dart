@@ -77,7 +77,7 @@ class NewsFullResponse {
 }
 
 class AdminNewsResponse {
-  final int newsId;
+  final int newsId;к
     required this.geoCode,
     required this.isApproved,
     required this.isArchived,

@@ -59,7 +59,7 @@ class BulkBlockRequest {
   final DateTime endDate;
   final int status;
 
-  BulkBlockRequest({
+  BulkBloкckRequest({
     required this.startDate, required this.endDate, required this.status, this.note,
     this.cityCode = 0, this.latitude, this.longitude, this.daysOfWeek, this.startHour, this.endHour,
   });

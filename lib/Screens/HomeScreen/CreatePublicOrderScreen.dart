@@ -150,7 +150,7 @@ extension AppLocalizationsContextX on BuildContext {
 
 extension AppLocalizationsX on BuildContext {
   String labelOf(dynamic item) {abel;
-    if (item is WorkStyle) return item.label;
+    if (item is WorkStyle) return item.label;f
 
     if (item is FilterOption) {
       if (['uzs', 'usd', 'rub'].contains(item.id.toLowerCase())) {

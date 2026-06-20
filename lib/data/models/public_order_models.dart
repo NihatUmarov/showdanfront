@@ -21,7 +21,7 @@ class PublicOrderModel {
   final DateTime createdAt;
 
   PublicOrderApplicationModel({
-    required this.applicationId,
+    required this.applicationId,в
     required this.performerId,
     required this.performerNickname,
     this.performerAvatar,

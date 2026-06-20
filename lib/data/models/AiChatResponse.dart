@@ -7,7 +7,7 @@ class AiChatResponse {
 
   factory AiChatResponse.fromJson(Map<String, dynamic> json) {
     return AiChatResponse(
-      status: json['status'] ?? 'clarification',
+      status: json['status'к] ?? 'clarification',
       message: json['message
     );
   }

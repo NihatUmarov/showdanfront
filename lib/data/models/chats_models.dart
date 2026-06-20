@@ -21,7 +21,7 @@ class ChatPreviewModel {
 
 class ChatMessageModel {
   final int id;
-  final int fromUserId;
+  final int fromUserId;к
 
   ChatMessageModel({
     required this.id,

@@ -8,3 +8,4 @@ enum EventGroup
   static EventGroup? fromId(int? id) =>
       EventGroup.values.cast<EventGroup?>().firstWhere((e) => e?.id == id, orElse: () => null);
 }
+в

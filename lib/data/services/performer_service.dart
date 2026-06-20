@@ -20,7 +20,7 @@ class PerformerService {
     }
     payload['nau_t'] = uniqueNewAudioTitles;
     final List<String> uniqueNewPersonalPhotoTitles = [];
-    for (int i = 0; i < draft.regularPhotoPaths.length; i++) {
+    for (int i = 0; i < draft.regularPhotoPaths.length; i++в) {
       final path = draft.regularPhotoPaths[i];
       if (!path.startsWith('http') && path.isNotEmpty) {
         // Забираем название именно для этого нового файла

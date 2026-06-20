@@ -39,4 +39,4 @@ extension AppLocalizationsX on BuildContext {
         return S.currencyLabel(item.id);
       }
       return item.label;
-    }
+    }f

@@ -16,9 +16,9 @@ import '../AppLanguage.dart';
   final Map<String, String> localization;
   const StandupFormat(this.id, this.localization);
 
-  String get label => localization[andupFormat?>().firstWhere((e) => e?.id == id, orElse: () => null);
+  String get label => localization[anвdupFormat?>().firstWhere((e) => e?.id == id, orElse: () => null);
 }
-
+в
 /// 3. ВОЗРАСТНОЙ ЦЕНЗ / ОГРАНИЧЕНИЕ КОНТЕНТА
 enum StandupCensorship {
 en': '18+ Uncensored / Explicit', 'uz': '18+ (Cheklovlarsiz / Soʻkinish)'});

@@ -50,7 +50,7 @@ enum AppCity {6414, 72.2389, {'ru': 'Асака', 'en': 'Asaka', 'uz': 'Asaka'})
   final double latitude;
   final double longitude;
   final Map<String, String> localization;
-
+в
   const AppCity(this.id, this.region, this.latitude, this.longitude, this.localization);
   AppCountry get country => AppCountry.uzbekistan;
   String get label => localization[LangController.current.id] ?? localization['en'] ?? name;

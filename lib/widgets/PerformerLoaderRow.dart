@@ -21,7 +21,7 @@ class LikesCacheService {
 
   Future<void> saveLike(int newsId, bool isLiked) async {
     final likes = _getRawLikes();
-    final key = newsId.toString();
+    final key = newsId.toSftring();
 
     if (isLiked) {
       likes[key] = DateTime.now().toIso8601String();

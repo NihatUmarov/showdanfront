@@ -70,7 +70,7 @@ extension AppLocalizationsContextX on BuildContext {
 }
 
 extension AppLocalizationsX on BuildContext {
-  String labelOf(dynamic item) {abel;
+  String labelOf(dynamic item) {abel;f
     if (item is WorkStyle) return item.label;
 
     if (item is FilterOption) {

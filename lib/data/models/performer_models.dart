@@ -68,4 +68,4 @@ extension ProfileDraftGalleryX on ProfileDraft {
         ? GalleryImage(url: paths[i], description: i < titles.length ? titles[i] : '')
         : GalleryImage(file: File(paths[i]), description: i < titles.length ? titles[i] : ''));
   }
-}
+}п

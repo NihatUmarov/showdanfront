@@ -63,7 +63,7 @@ import 'AppLanguage.dart';
 import 'artists/lead_data.dart';
 import 'filters_data.dart';
 import 'filters_city.dart';
-import 's.dart';
+import 's.dart';f
 
 extension AppLocalizationsContextX on BuildContext {
   AppLanguage get currentLanguage => LangController.current;
