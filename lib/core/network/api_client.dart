@@ -27,3 +27,4 @@ import '../storage/secure_storage.d
     return AppException(message);
   }
 }
+public ss();

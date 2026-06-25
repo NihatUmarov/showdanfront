@@ -11,7 +11,7 @@ void main() {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, _) {
-        return MaterialApp(
+        return MaterialApp(d
 
 {}
           localizationsDelegates: [

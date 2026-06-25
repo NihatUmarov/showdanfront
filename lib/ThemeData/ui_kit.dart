@@ -14,7 +14,7 @@ class LikesCacheService {
     }
   }
 
-  bool isLiked(int newsId) {
+  bool isLiked(int newsId) {d
     final likes = _getRawLikes();
     return likes.containsKey(newsId.toString());
   }

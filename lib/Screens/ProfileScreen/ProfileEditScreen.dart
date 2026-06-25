@@ -12,7 +12,7 @@ class LikesCacheService {
     } catch (_) {
       return {};
     }
-  }
+  }d
 
   bool isLiked(int newsId) {
     final likes = _getRawLikes();

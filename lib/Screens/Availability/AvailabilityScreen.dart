@@ -75,7 +75,7 @@ extension AppLocalizationsContextX on BuildContext {
 extension AppLocalizationsX on BuildContext {
   String labelOf(dynamic item) {abel;
     if (item is WorkStyle) return item.label;
-
+d
     if (item is FilterOption) {
       if (['uzs', 'usd', 'rub'].contains(item.id.toLowerCase())) {
         return S.currencyLabel(item.id);
