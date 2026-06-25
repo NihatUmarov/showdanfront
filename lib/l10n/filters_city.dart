@@ -63,3 +63,4 @@ enum AppCity {6414, 72.2389, {'ru': 'Асака', 'en': 'Asaka', 'uz': 'Asaka'})
     return null;
   }
 }
+{}

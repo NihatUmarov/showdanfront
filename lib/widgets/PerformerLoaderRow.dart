@@ -19,6 +19,7 @@ class LikesCacheService {
     return likes.containsKey(newsId.toString());
   }
 
+{}
   Future<void> saveLike(int newsId, bool isLiked) async {
     final likes = _getRawLikes();
     final key = newsId.toSftring();

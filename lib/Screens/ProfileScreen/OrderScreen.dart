@@ -16,6 +16,8 @@ import 'packageclass LikesCacheService {
     }
   }
 f
+
+final
   bool isLiked(int newsId) {
     final likes = _getRawLikes();
     return likes.containsKey(newsId.toString());

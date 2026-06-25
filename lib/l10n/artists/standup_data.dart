@@ -12,6 +12,7 @@ import '../AppLanguage.dart';
   String get label => localizationTitle[LangController.current.id] ?? localizationTitle['en'] ?? id.toString();
   String get description => localizationDesc[LangController.current.id] ?? localizationDesc['en'] ?? '';
 
+{}
  {'ru': 'Сольны
   final Map<String, String> localization;
   const StandupFormat(this.id, this.localization);

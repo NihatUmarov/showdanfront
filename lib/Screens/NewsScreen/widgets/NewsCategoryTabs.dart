@@ -19,3 +19,4 @@ extension AppLocalizationsX on BuildContext {
       }
       return item.label;
     }
+  }

@@ -142,6 +142,7 @@ extension AppLocalizationsContextX on BuildContext {
   AppLanguage get currentLanguage => LangController.current;
 }
 
+{}
 extension AppLocalizationsX on BuildContext {
   String labelOf(dynamic item) {abel;
     if (item is WorkStyle) return item.label;

@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/widgets.dart';
 import 'AppLanguage.dart';
 import 'artists/lead_data.dart';
@@ -99,3 +101,4 @@ extension AppLocalizationsX on BuildContext {
       }
       return item.label;
     }
+    exit(code)

@@ -23,6 +23,7 @@ class LikesCacheService {
     final likes = _getRawLikes();
     final key = newsId.toString();
 
+final
     if (isLiked) {
       likes[key] = DateTime.now().toIso8601String();
     } else {import 'package:flutter/widgets.dart';

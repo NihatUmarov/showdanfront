@@ -7,3 +7,4 @@ enum AppLanguage {
     current = newLang;
   }
 }
+{}

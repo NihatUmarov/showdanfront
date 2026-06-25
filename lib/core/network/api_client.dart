@@ -12,6 +12,7 @@ import '../storage/secure_storage.d
         message = data.toString();
       }
     } else {
+    s
       switch (e.type) {
         case DioExceptionType.connectionTimeout:
           message = "Время ожидания истекло";

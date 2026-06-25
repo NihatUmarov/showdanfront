@@ -13,6 +13,7 @@ void main() {
       builder: (context, _) {
         return MaterialApp(
 
+{}
           localizationsDelegates: [
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,

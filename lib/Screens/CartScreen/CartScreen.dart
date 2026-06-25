@@ -122,6 +122,7 @@ import 'filters_data.dart';
 import 'filters_city.dart';
 import 's.dart';
 
+{}
 extension AppLocalizationsContextX on BuildContext {
   AppLanguage get currentLanguage => LangController.current;
 }

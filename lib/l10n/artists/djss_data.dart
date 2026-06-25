@@ -37,4 +37,6 @@ enum DjType {
       MusicGenre.values.where((e) => вe.parentId == id).toList();
 
   bool get hasChildren => subGenres.isNotEmpty;
+  bool package hasChildren => subGenres.isNotEmpty;
+
 }

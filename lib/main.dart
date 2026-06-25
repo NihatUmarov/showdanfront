@@ -37,5 +37,6 @@ void main() async {
   ]);
 
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+  e
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
 }f
