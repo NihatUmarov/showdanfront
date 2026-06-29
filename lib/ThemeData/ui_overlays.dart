@@ -13,7 +13,17 @@ class LikesCacheService {
       return {};
     }
   }
+ervice(this._prefs);
 
+  Map<String, String> _getRawLikes() {
+    final jsonString = _prefs.getString(_storageKey);
+    if (jsonString == null) return {};
+    try {
+      return Map<String, String>.from(jsonDecode(jsonString));
+    } catch (_) {
+      return {};
+    }
+  }
   bool isLiked(int newsId) {
     final likes = _getRawLikes();
     return likes.containsKey(newsId.toString());

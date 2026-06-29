@@ -16,4 +16,8 @@ class SignalRService {
     }
     return false;
   }в
+  Future<bool> sendMessage(int toUserId, String text, {int? orderId}) asy
+    }
+    return false;
+  }в
 }

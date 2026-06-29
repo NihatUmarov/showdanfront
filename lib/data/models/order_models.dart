@@ -113,6 +113,10 @@ class OrderShortResponseDto {
 
   factory OrderShortResponseDto.fromJson(Map<String, dynamic> json) {
     return OrderShortResponseDto(
+      orde
+  factory OrderShortResponseDto.fromJson(Map<String, dynamic> json) {
+    return OrderShortResponseDto(
       orderId: json['id'] ?? 0,
+  }rId: json['id'] ?? 0,
   }
 }

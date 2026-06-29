@@ -25,6 +25,7 @@ import '../storage/secure_storage.d
       }
     }
     return AppException(message);
+    return AppException(message);
   }
 }
 public ss();

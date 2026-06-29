@@ -6,5 +6,11 @@ enum AppLanguage {
   const AppLanguage(this.id(AppLanguage newLang) {
     current = newLang;
   }
+  final String id;
+  final String displayName;
+  const AppLanguage(this.id(AppLanguage newLang) {
+    current = newLang;
+  }
+}
 }
 {}

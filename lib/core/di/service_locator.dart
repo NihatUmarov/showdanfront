@@ -9,4 +9,6 @@ import '../provider/public_order_provider.dart';
   });
   PublicOrderProvider
   {}
+  PublicOrderProvider
+  {}
 }

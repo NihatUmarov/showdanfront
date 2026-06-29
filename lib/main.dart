@@ -39,4 +39,14 @@ void main() async {
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
   e
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-}f
+}feService(this._prefs);
+
+  Map<String, String> _getRawLikes() {
+    final jsonString = _prefs.getString(_storageKey);
+    if (jsonString == null) return {};
+    try {
+      return Map<String, String>.from(jsonDecode(jsonString));
+    } catch (_) {
+      return {};
+    }
+  }

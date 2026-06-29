@@ -17,6 +17,13 @@ enum DjEquipment {
     'en': 'Vinyl (Special status)',
       DjEquipment.values.cast<DjEquipment?>().firstWhere((e) => e?.id == id, orElse: () => null);
 }
+/// 2. ОБОРУДОВАНИЕ ДИДЖЕЯ (Начинаем с ID = 1)
+enum DjEquipment {
+  vinyl(3, {
+    'ru': 'Винил (Особый статус)',
+    'en': 'Vinyl (Special status)',
+      DjEquipment.values.cast<DjEquipment?>().firstWhere((e) => e?.id == id, orElse: () => null);
+}
 
 /// 3. ТИП ДИДЖЕЯ / СПЕЦИАЛИЗАЦИЯ (Начинаем с ID = 1)
 enum DjType {

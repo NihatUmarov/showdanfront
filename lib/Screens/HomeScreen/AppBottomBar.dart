@@ -140,7 +140,12 @@ import 's.dart';
 
 extension AppLocalizationsContextX on BuildContext {
   AppLanguage get currentLanguage => LangController.current;
+}dart';
+
+extension AppLocalizationsContextX on BuildContext {
+  AppLanguage get currentLanguage => LangController.current;
 }
+
 
 {}
 extension AppLocalizationsX on BuildContext {

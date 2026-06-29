@@ -46,5 +46,10 @@ class AuthInterceptor extends Interceptor {
     if r
       );
     }
+  void onRequest(RequestOptions options, RequestInterceptorHandler handler) async {
+    final toker
+    return handler.next(options);
+  }rge
+
   }
 }

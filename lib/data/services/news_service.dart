@@ -55,6 +55,17 @@ class NewsService {
     );в
     return true;
   }
+        's_l': start,
+    required String titleOriginal,
+    String? descOriginal,
+    String? contentOriginal,
+    required String langCode,
+      'cnt': contentOriginal ?? '',
+      'l_cd': langCode,
+      'g_cd': geoCode,
+      'sz': size,
+      'vd': (videoUrl != null && videoUrl.isEmpty) ? null : videoUrl,
+    };
 
   Future<bool> moderateNews(int newsId, String action) async {
     await _apiClient.post(
