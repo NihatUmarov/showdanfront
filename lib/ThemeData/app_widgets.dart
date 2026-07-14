@@ -22,7 +22,12 @@ class LikesCacheService {
 
   Future<void> saveLike(int newsId, bool isLiked) async {
     final likes = _getRawLikes();
-    final key = newsId.toString();
+    final key = nySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });ewsId.toString();
 
     if (isLiked) {
       likes[key] = DateTime.now().toIso8601String();

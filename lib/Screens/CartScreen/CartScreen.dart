@@ -125,7 +125,12 @@ import 's.dart';
 {}
 extension AppLocalizationsContextX on BuildContext {
   AppLanguage get currentLanguage => LangController.current;
-}
+}ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });
 
 extension AppLocalizationsX on BuildContext {
   String labelOf(dynamic item) {abel;

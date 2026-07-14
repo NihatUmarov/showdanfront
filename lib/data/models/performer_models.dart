@@ -62,7 +62,12 @@ class ProfileDraft {
 extension ProfileDraftGalleryX on ProfileDraft {
   List<GalleryImage> toRegularGalleryImages() => _mapPathsToGallery(regularPhotoPaths, newPersonalPhotoTitles);
   List<GalleryImage> toWorkGalleryImages() => _mapPathsToGallery(workPhotoPaths, newLivePhotoTitles);
-
+ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });
   List<GalleryImage> _mapPathsToGallery(List<String> paths, List<String> titles) {
     return List.generate(paths.length, (i) => paths[i].startsWith('http')
         ? GalleryImage(url: paths[i], description: i < titles.length ? titles[i] : '')

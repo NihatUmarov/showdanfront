@@ -18,6 +18,16 @@ class SignalRService {
   }в
   Future<bool> sendMessage(int toUserId, String text, {int? orderId}) asy
     }
-    return false;
+    return false;ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });
   }в
-}
+}ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });

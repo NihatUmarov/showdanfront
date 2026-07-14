@@ -48,7 +48,12 @@ class AuthInterceptor extends Interceptor {
     }
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) async {
     final toker
-    return handler.next(options);
+    return haySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });ndler.next(options);
   }rge
 
   }

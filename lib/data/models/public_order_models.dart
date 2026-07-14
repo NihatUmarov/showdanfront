@@ -19,7 +19,12 @@ class PublicOrderModel {
   final double totalPrice;
   final String? coverLetter;
   final DateTime createdAt;
-
+ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });
   PublicOrderApplicationModel({
     required this.applicationId,в
     required this.performerId,

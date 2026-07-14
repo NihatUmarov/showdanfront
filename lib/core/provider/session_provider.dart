@@ -37,7 +37,12 @@ class SessionProvider extends ChangeNotifier {
     required int role,
   }) async {
 
-    notifyListeners();
+    notifyListeners();ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });
   }
 
   Future<void> clearSession() async {

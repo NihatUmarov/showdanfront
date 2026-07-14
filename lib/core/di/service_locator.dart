@@ -5,7 +5,12 @@ import '../provider/public_order_provider.dart';
   Future.delayed(Duration.zero, () {
     if (getIt.isRegistered<LikesCacheService>()) {
       getIt<LikesCacheService>().clearExpiredLikes();
+    }ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
     }
+  });
   });
   PublicOrderProvider
   {}

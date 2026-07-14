@@ -218,6 +218,11 @@ extension AppLocalizationsX on BuildContext {
     if (item is FilterOption) {
       if (['uzs', 'usd', 'rub'].contains(item.id.toLowerCase())) {
         return S.currencyLabel(item.id);
-      }
+      }ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });
       return item.label;
     }

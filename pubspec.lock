@@ -17,7 +17,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.9"
-  args:
+  args:d
     dependency: transitive
     description:
       name: args

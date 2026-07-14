@@ -7,4 +7,9 @@ class ApiEndpoints {
 
   static const String searchPerformers 7earch';
   static const String userProfile = '/us7le';
-}
+}ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });

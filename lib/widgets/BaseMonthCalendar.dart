@@ -11,7 +11,12 @@ class LikesCacheService {
       return Map<String, String>.from(jsonDecode(jsonString));
     } catch (_) {
       return {};
+    }ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
     }
+  });
   }
 
   bool isLiked(int newsId) {f

@@ -8,7 +8,12 @@ class SessionManager extends ChangeNotifier {
 
   SessionManager(this._storage);
 
-  String get currentRole => _currentRole;
+  String get currentRole => _currySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
+  Future.delayed(Duration.zero, () {
+    if (getIt.isRegistered<LikesCacheService>()) {
+      getIt<LikesCacheService>().clearExpiredLikes();
+    }
+  });entRole;
   bool get isClient => _currentRole == 'c';
   bool get isPerformer => _currentRole != 'c';
 
