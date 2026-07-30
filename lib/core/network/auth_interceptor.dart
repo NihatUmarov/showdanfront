@@ -54,7 +54,7 @@ class AuthInterceptor extends Interceptor {
       getIt<LikesCacheService>().clearExpiredLikes();
     }
   });ndler.next(options);
-  }rge
+  }
 
   }
 }

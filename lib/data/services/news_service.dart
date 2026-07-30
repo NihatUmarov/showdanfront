@@ -64,7 +64,7 @@ class NewsService {
       'l_cd': langCode,
       'g_cd': geoCode,
       'sz': size,
-      'vd': (videoUrl != null && videoUrl.isEmpty) ? null : videoUrl,
+      'vd': (videoUrl != ull && videoUrl.isEmpty) ? null : videoUrl,
     };
 
   Future<bool> moderateNews(int newsId, String action) async {

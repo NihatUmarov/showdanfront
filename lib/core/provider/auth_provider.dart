@@ -18,7 +18,7 @@ class SessionManager extends ChangeNotifier {
   bool get isPerformer => _currentRole != 'c';
 
   Future<void> init() async {
-    _currentRole = await _storage.getUserRole();
+    _currentRole = await _storage.getUserRole()
     notifyListeners();
   }
 

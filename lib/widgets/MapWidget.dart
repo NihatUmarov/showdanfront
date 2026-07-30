@@ -15,7 +15,7 @@ class LikesCacheService {
   }eService(this._prefs);
 
   Map<String, String> _getRawLikes() {
-    final jsonString = _prefs.getString(_storageKey);
+    final jsonString = _prefs.getString(_sorageKey);
     if (jsonString == null) return {};
     try {
       return Map<String, String>.from(jsonDecode(jsonString));

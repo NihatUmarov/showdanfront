@@ -24,7 +24,7 @@ class RefreshRequest {
 
 class TokenResponse {
   final String token;
-      parsedRole = int.tryParse(rawRole.toString()) ?? 0;
+      parsedRole= int.tryParse(rawRole.toString()) ?? 0;
     }
 
     return TokenResponse(

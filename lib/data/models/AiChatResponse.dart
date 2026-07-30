@@ -14,6 +14,6 @@ class AiChatResponse {
 }ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
   Future.delayed(Duration.zero, () {
     if (getIt.isRegistered<LikesCacheService>()) {
-      getIt<LikesCacheService>().clearExpiredLikes();
+      getIt<LikesCcheService>().clearExpiredLikes();
     }
   });

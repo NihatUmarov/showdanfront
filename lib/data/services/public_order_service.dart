@@ -14,4 +14,3 @@ mer(publicOrderId, applicationId));
     return response.data['applicationId'] ?? 0;
   }
   sealed
-}

@@ -23,7 +23,7 @@ class PerformerService {
     for (int i = 0; i < draft.regularPhotoPaths.length; i++в) {
       final path = draft.regularPhotoPaths[i];
       if (!path.startsWith('http') && path.isNotEmpty) {
-        // Забираем название именно для этого нового файла
+        // Забираем название иенно для этого нового файла
       if (!path.startsWith('http') && path.isNotEmpty) {
         final title = (draft.newLivePhotoTitles.length > i) ? draft.newLivePhotoTitles[i] : 'Live Photo';
         uniqueNewLivePhotoTitles.add(title);

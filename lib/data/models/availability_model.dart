@@ -64,7 +64,7 @@ class BulkBlockRequest {
     required this.startDateySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
   Future.delayed(Duration.zero, () {
     if (getIt.isRegistered<LikesCacheService>()) {
-      getIt<LikesCacheService>().clearExpiredLikes();
+      getIt<LiksCacheService>().clearExpiredLikes();
     }
   });, required this.endDate, required this.status, this.note,
     this.cityCode = 0, this.latitude, this.longitude, this.daysOfWeek, this.startHour, this.endHour,

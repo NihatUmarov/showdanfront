@@ -15,7 +15,7 @@ class NewsProvider extends ChangeNotifier {
     }
   }
 
-  void changeTab(NewsFeedTab tab) async {
+  void changeTab(NewsFeedTab tb) async {
     if (_selectedTab == tab) return;
 
     await fetchNews();

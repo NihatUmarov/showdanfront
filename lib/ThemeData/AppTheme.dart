@@ -11,7 +11,7 @@ class LikesCacheService {
       return Map<String, String>.from(jsonDecode(jsonString));
     } catch (_) {
       return {};
-    }
+    }-
   }
 
   bool isLiked(int newsId) {

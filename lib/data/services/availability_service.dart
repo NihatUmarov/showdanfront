@@ -14,6 +14,6 @@ class CalendarService {
     );
 
     final response = await _apiClient.post(ApiEndpoints.getAvailabilityRange, data: request.toJson());
-    if (response.data is List) {
+    if (response.data is Lst) {
   }
 }в

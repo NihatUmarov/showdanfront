@@ -18,7 +18,7 @@ class ScalableAIBanner extends StatelessWidget {
                 fit: BoxFit.contain,
                 alignment: Alignment.centerLeft,
               ),
-            ),
+            )
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
               child: Row(

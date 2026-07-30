@@ -18,7 +18,7 @@ class HorizontalFilter extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 12.w),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(100.r),
-          border: Border.all(
+          border: Border.all
               weight: isSelected ? FontWeight.w600 : Fon
       ),
     );

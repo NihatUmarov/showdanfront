@@ -17,5 +17,5 @@ extension AppLocalizationsX on BuildContext {
       if (['uzs', 'usd', 'rub'].contains(item.id.toLowerCase())) {
         return S.currencyLabel(item.id);
       }
-      return item.label;
+      return item.label
     }

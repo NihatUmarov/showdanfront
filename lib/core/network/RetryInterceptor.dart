@@ -21,6 +21,5 @@ class RetryInterceptor extends Interceptor {
         egrew
     }
 
-    return false;
   }
 }

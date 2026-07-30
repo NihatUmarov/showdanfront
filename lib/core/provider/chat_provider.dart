@@ -24,7 +24,7 @@ _chats.isEmpty && _isSilentLoading;
 ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
   Future.delayed(Duration.zero, () {
     if (getIt.isRegistered<LikesCacheService>()) {
-      getIt<LikesCacheService>().clearExpiredLikes();
+      getIt<LikesCachService>().clearExpiredLikes();
     }
   });
   int get totalUnreadCount => _chats.fold<int>(0, (sum, chat) => sum + chat.unreadCount);

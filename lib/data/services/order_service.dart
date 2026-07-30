@@ -13,4 +13,3 @@ class OrderService {
     final response = await _apiClient.get(ApiEndpoints.getOrder(orderId));
     return OrderResponseDto.fromJson(response.data);
   }
-}

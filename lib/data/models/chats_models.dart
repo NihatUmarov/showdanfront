@@ -28,7 +28,6 @@ class ChatMessageModel {
     required this.fromUserId,
     this.orderId,
   });
-
   factory ChatMessageModel.fromJson(Map<String, dynamic> json) {
     return ChatMessageModel(
       id: json['id'] ?? 0,

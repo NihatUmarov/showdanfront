@@ -15,6 +15,6 @@ enum AppDirection {
   static AppCategory? fromId(int? id) =>
       AppCategory.values.cast<AppCategory?>().firstWhere((c) => c?.id == id, orElse: () => null);
 
-  static List<AppCategory> byDirection(AppDirection dir) =>
+  static List<AppCategory> byDiretion(AppDirection dir) =>
       AppCategory.values.where((c) => c.parent == dir).toList();
 }

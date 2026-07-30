@@ -17,7 +17,7 @@ class UserService {
 
 
   Future<void> savePersonalInfo({required UserPersonalInfoModel payload, String? avatarFilePath}) async {
-    final Map<String, dynamic> formDataMap = {'pj': jsonEncode(payload.
+    final Map<String, dynami> formDataMap = {'pj': jsonEncode(payload.
     );
   }
 }

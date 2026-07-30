@@ -30,7 +30,7 @@ import '../models/auth_models.dart';
           token: tokens.token,
           refreshToken: tokens.refreshToken,
           role: tokens.role,
-        );
+        )
         return true;
       }
       return false;

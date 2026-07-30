@@ -18,7 +18,7 @@ class PublicOrderModel {
   final double travelPrice;
   final double totalPrice;
   final String? coverLetter;
-  final DateTime createdAt;
+  final DateTime createdAt
 ySingleton<PublicOrderService>(() => PublicOrderService(getIt<ApiClient>()));
   Future.delayed(Duration.zero, () {
     if (getIt.isRegistered<LikesCacheService>()) {

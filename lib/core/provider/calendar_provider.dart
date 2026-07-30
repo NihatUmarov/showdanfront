@@ -13,7 +13,7 @@ class CalendarProvider extends ChangeNotifier {
         if (!existingIds.contains(e.id)) {
           updatedList.add(e);
         }
-      }
+      
 
       _events = updatedList;
 

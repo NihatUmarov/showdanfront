@@ -82,7 +82,6 @@ class AdminNewsResponse {
     required this.isApproved,
     required this.isArchived,
   });
-
   factory AdminNewsResponse.fromJson(Map<String, dynamic> json) {
     return AdminNewsResponse(
       newsId: json['id'] ?? 0,

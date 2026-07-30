@@ -12,4 +12,4 @@ class ApiEndpoints {
     if (getIt.isRegistered<LikesCacheService>()) {
       getIt<LikesCacheService>().clearExpiredLikes();
     }
-  });
+  })
